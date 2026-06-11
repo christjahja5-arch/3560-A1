@@ -29,7 +29,7 @@ public class VotingService {
 
     //counts all of the voting submissions and then displays it
     public void printStatistics() {
-        System.out.println("\n===== iVote Results =====");
+        System.out.println("\nResults");
         System.out.println("Question: " + currentQuestion.getPromptText());
         System.out.println("Total submissions: " + submissions.size());
 
@@ -47,6 +47,5 @@ public class VotingService {
         for (Map.Entry<String, Integer> entry : tally.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue() + " vote(s)");
         }
-        System.out.println("=========================\n");
     }
 }
